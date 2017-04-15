@@ -1,7 +1,7 @@
 package com.theironyard;
 
 /**
- * Created by doug on 4/13/17.
+ * Created by doug on 4/14/17.
  */
 public class Person {
 
@@ -19,6 +19,9 @@ public class Person {
         this.middleName = middleName;
         this.lastName = lastName;
         this.suffix = suffix;
+    }
+
+    public Person() {
     }
 
     public Integer getPersonId() {

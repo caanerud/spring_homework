@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <!-- todo: make this shown add or edit as appropriate -->
     <title>Add/Edit Person</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    <link rel="stylesheet" href="../static/css/styles.css" th:href="@{/css/styles.css}" />
+    <link rel="stylesheet" href="../static/css/styles.css" />
 </head>
 <body>
 
 <nav>
     <ul>
-        <li><a href="index.html" th:href="@{/}">Home</a></li>
-        <li><a href="personForm.html" th:href="@{/personForm}">Add Person</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personForm.html">Add Person</a></li>
     </ul>
 </nav>
 
@@ -26,27 +26,27 @@
 <form action="index.html" method="post">
     <label>
         <span>Title:</span>
-        <input type="text" name="title" value="" />
+        <input type="text" name="title" value="">
     </label>
 
     <label>
         <span>First Name:</span>
-        <input type="text" name="firstName" value="" required="required" />
+        <input type="text" name="firstName" value="" required>
     </label>
 
     <label>
         <span>Middle Name:</span>
-        <input type="text" name="middleName" value="" />
+        <input type="text" name="middleName" value="">
     </label>
 
     <label>
         <span>List Name:</span>
-        <input type="text" name="lastName" value="" required="required" />
+        <input type="text" name="lastName" value="" required>
     </label>
 
     <label>
         <span>Suffix:</span>
-        <input type="text" name="suffix" value="" />
+        <input type="text" name="suffix" value="">
     </label>
 
     <input type="hidden" name="personId" value="" />
